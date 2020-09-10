@@ -1,0 +1,64 @@
+footer a:link, footer a:visited{
+    color: grey;
+    background-color: lightgrey;
+    padding: 25px 35px;
+    text-align: center center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+footer a:hover, footer a:active{
+    color: lightgrey;
+    background-color: grey;
+}
+  .st-footer{
+    margin: 0;
+    margin-top: 20px;
+    width:100%;
+    height:auto;
+    clear:both;
+  }
+  .menu{
+    background-color: rgb(75, 209, 182);
+    padding: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: auto;
+    }
+
+  .mi-boton-redsocial {
+    color: white;
+  }
+
+  .mi-boton-redsocial a:hover {
+    color: #7D3C98;
+    font-size: 15px;
+  }
+
+  .mis-redes-sociales p {
+    color: black;
+  }
+
+  .lista-de-secciones ul{
+    list-style-type: circle;
+  }
+
+  .lista-de-secciones li a{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .mapa{
+    padding-left: 2%;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .menu-maps, .contacto, .lista-de-secciones{
+    margin-top: 10px;
+  }
+
+.footer-link a{
+  color: #000;
+}
