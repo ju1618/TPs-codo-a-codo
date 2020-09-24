@@ -2,11 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sukaldea</title>
+    <title>Sukaldea - Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navstyle.css">
     <link rel="stylesheet" href="css/style-index.css">
     <link rel="stylesheet" href="css/style-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -35,66 +36,110 @@
           <li class="nav-item">
             <a class= "nav-link" href="contacto.html">Contacto</a>
           </li>
+          <li class="nav-item">
+            <a class= "nav-link" href="Sucursales.html">Sucursales</a>
+          </li>
+          <li class="nav-item">
+            <a class= "nav-link" href="Nosotros.html">Nosotros</a>
+          </li>
         </ul>
       </div>
     </nav>
     <div id="fantasma"></div>
     <main>
-       <h1>ESTO ES EL INDEX</h1>
+       <h1>Sukaldea</h1>
+       <div class="frase">
+         <p class="font-italic">El secreto del éxito en la vida es comer lo que te gusta y dejar que la comida combata dentro. </p>
+         <p class="font-weight-light align-right">-Mark Twain</p>
+       </div>
+       <div id="carouselIndex" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselIndex" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndex" data-slide-to="1"></li>
+          <li data-target="#carouselIndex" data-slide-to="2"></li>
+          <li data-target="#carouselIndex" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/fondo-index.jpg" class="d-block mx-auto img-carousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/plato fondo.jpg" class="d-block mx-auto img-carousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Pinchos_aperitivo.jpg" class="d-block mx-auto img-carousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/fondo-pintxo.jpg" class="d-block mx-auto img-carousel" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselIndex" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselIndex" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+      </div>
+      <div class="menu-boton">
+         <a href="menu.html" class="btn btn-outline-warning">Mirá nuestro Menú</a>
+      </div>
+
     </main>
      <!--                             INICIO DE FOOTER                       -->
-    <footer class="container mx-auto st-footer col-12">
-                                 <div class="redes d-flex justify-content-center">
-                                     <div class="mis-redes-sociales align-self-center">
-                                       <br>
-                                       <p>También estamos en las redes!</p>
-                                       <div class="mis-botones-redes d-flex justify-content-between align-items-center">
-                                         <a class="mi-boton-redsocial" href="https://twitter.com/?lang=es"><img class="bi" width="32" height="32" fill="currentColor" src="ionicons/png/512/social-twitter.png" alt="logo-twitter"></a>
-                                         <a class="mi-boton-redsocial" href="https://facebook.com/"><img class="bi" width="32" height="32" fill="currentColor" src="ionicons/png/512/social-facebook.png" alt="logo-facebook"></a>
-                                         <a class="mi-boton-redsocial" href="https://www.instagram.com/?hl=es-la"><img class="bi" width="32" height="32" fill="currentColor" src="ionicons/png/512/social-instagram.png" alt="logo-instagram"></a>
-                                       </div>
-                                     </div>
-                                 </div>
-                                     <hr>
-                                 <div class="d-flex justify-content-around">
-                                     <div class="">
-                                       <div class="">
-                                         <h5 class="lista-de-secciones">Mapa del sitio</h5>
-                                         <div class="d-block">
-                                           <a href="index.html">Home</a> <br>
-                                           <a href="menu.html">Menu</a><br>
-                                           <a href="contacto.html">Contacto</a> <br>
-                                         </div>
-                                       </div>
-                                     </div>
-                                     <div class="contacto d-flex justify-content-center">
-                                       <div class="justify-content-center">
-                                         <h5 class="">Contacto</h5>
-                                         <p>
-                                           Calle falsa 123, <br>
-                                           CABA <br>
-                                           telefono: 555-5555 <br>
-                                           <a class="d-inline d-md-none"href="mailto:consultas@sukaldea.com">mail</a><br>
-                                         </p>
-                                       </div>
-                                     </div>
-                                   <div class="menu-maps d-flex flex-column flex-lg-row justify-content-end">
-                                     <div class="mapa d-none d-md-block float-right">
-                                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889551!2d-58.38375908543037!3d-34.60373446500459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1599086443624!5m2!1ses-419!2sar" class="rounded float-right" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                     </div>
-                                     <div class="linkAlMapa d-block d-sm-block d-md-none">
-                                       <a class="text-center" href="https://goo.gl/maps/XJPizahVCrWxmr8i8">Ir al mapa</a>
-                                     </div>
-                                   </div>
+     <footer class="container mx-auto st-footer col-12 ">
+        <div class="redes d-flex justify-content-center">
+            <div class="mis-redes-sociales align-self-center">
+              <br>
+              <p>También estamos en las redes!</p>
+              <div class="mis-botones-redes d-flex justify-content-between align-items-center">
+                <a class="mi-boton-redsocial" href="https://twitter.com/?lang=es"><img class="bi" width="32" height="32" fill="currentColor" src="ionicons/png/512/social-twitter.png" alt="logo-twitter"></a>
+                <a class="mi-boton-redsocial" href="https://facebook.com/"><img class="bi" width="32" height="32" fill="currentColor" src="ionicons/png/512/social-facebook.png" alt="logo-facebook"></a>
+                <a class="mi-boton-redsocial" href="https://www.instagram.com/?hl=es-la"><img class="bi" width="32" height="32" fill="currentColor" src="ionicons/png/512/social-instagram.png" alt="logo-instagram"></a>
+              </div>
+            </div>
+        </div>
+         <hr>
+        <!-- <div class="d-flex justify-content-around bg-secondary text-white">
+            <div class="">
+              <div class="">
+                <h5 class="lista-de-secciones">Mapa del sitio</h5>
+                <div class="d-block">
+                  <a href="index.html">Home</a> <br>
+                  <a href="menu.html">Menu</a><br>
+                  <a href="contacto.html">Contacto</a> <br>
+                </div>
+              </div>
+            </div>
+            <div class="contacto d-flex justify-content-center">
+              <div class="justify-content-center">
+                <h5 class="">Contacto</h5>
+                <p>
+                  Calle falsa 123, <br>
+                  CABA <br>
+                  telefono: 555-5555 <br>
+                  <a class="d-inline d-md-none"href="mailto:consultas@sukaldea.com">mail</a><br>
+                </p>
+              </div>
+            </div>
+          <div class="menu-maps d-flex flex-column flex-lg-row justify-content-end">
+            <div class="mapa d-none d-md-block float-right">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889551!2d-58.38375908543037!3d-34.60373446500459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1599086443624!5m2!1ses-419!2sar" class="rounded float-right" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="linkAlMapa d-block d-sm-block d-md-none">
+              <a class="text-center" href="https://goo.gl/maps/XJPizahVCrWxmr8i8">Ir al mapa</a>
+            </div>
+          </div>
 
-                                 </div>
-                                 <hr>
-                                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-                                   <p class="float-left" style="color: #000;">&copy; 2020 Trabajo Integrador. </p>
-                                   <p class="float-right footer-link" style="color: #000;"><a style="color: #000;" href="index.html">-Home- </a></p>
-                                   <p class="float-right footer-link" style="color: #000;"><a style="color: #000;" href="#">-Ir arriba-</a></p>
-                                 </div>
-                               </footer>
+        </div> -->
+        <hr>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <p class="float-left" style="color: #000;">&copy; 2020 Trabajo Integrador. </p>
+          <p class="float-right footer-link" style="color: #000;"><a style="color: #000;" href="index.html">-Home- </a></p>
+          <p class="float-right footer-link" style="color: #000;"><a style="color: #000;" href="#">-Ir arriba-</a></p>
+        </div>
+     </footer>
     <!--                             FIN DE FOOTER                       -->
   </body>
 

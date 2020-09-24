@@ -2,11 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sukaldea</title>
+    <title>Sukaldea - Menu</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navstyle.css">
     <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/style-menu.css">
     <link rel="stylesheet" href="css/style-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -17,7 +19,7 @@
     <header>
 
     </header>
-    <nav class="main-nav navbar fixed-top navbar navbar-expand-lg navbar-light">
+    <nav class="main-nav navbar fixed-top navbar-expand-lg navbar-light">
       <a class= "navbar-brand" href="index.html">
         <img class="logo navbar-brand" src="images/logo.png" id="logo" alt="logo tu empresa">
       </a>
@@ -35,24 +37,228 @@
           <li class="nav-item">
             <a class= "nav-link" href="contacto.html">Contacto</a>
           </li>
+          <li class="nav-item">
+            <a class= "nav-link" href="Sucursales.html">Sucursales</a>
+          </li>
+          <li class="nav-item">
+            <a class= "nav-link" href="Nosotros.html">Nosotros</a>
+          </li>
         </ul>
       </div>
     </nav>
-    <div id="fantasma"></div>
+    <div id="fantasma"> </div>
     <main>
-       <h1>ESTO ES EL MENU</h1>
+     <h2 class="titulo">MENU</h2>
+     <div class="d-flex align-content-center justify-content-around flex-wrap">
 
-       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Nombre del plato</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-        </div>
-      </div>
+        <div class="rounded-lg border border-warning text-black contenedor-detalle">
+          <h5 class="card-title mi-cabecera-detalle">Gildas</h5>
+            <img src="images/gildas.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Gildas">
+            <div class="d-flex align-content-center justify-content-around ">
+              <button type="button" class="btn btn-warning mi-boton" data-toggle="modal" data-target="#ModalGilda">
+                Ver Detalle
+              </button>
+              <button type="button" class="btn btn-warning mi-boton" data-toggle="modal">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+
+         <div class="modal fade" id="ModalGilda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog modal-dialog-scrollable" >
+             <div class="modal-content" style="background-color: #5e1ea9">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Gildas</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
+               <div class="modal-body">
+                 <img src="images/gildas.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Gildas">
+                 <p class="card-text detalle-descripciones">La gilda es el bocado más típico de Bilbao y consiste en una guindilla ensartada con anchoa y piparra.</p>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                 <button type="button" class="btn btn-warning">Agregar a Carrito</button>
+               </div>
+             </div>
+           </div>
+         </div>
+
+        <div class=" rounded-lg border border-warning text-black contenedor-detalle">
+          <h5 class="card-title mi-cabecera-detalle">Pintxo de bacalao</h5>
+            <img src="images/pintxo de bacalao.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Pintxo">
+            <div class="d-flex align-content-center justify-content-around">
+              <button type="button" class="btn btn-warning mi-boton" data-toggle="modal" data-target="#ModalPintxo">
+                Ver Detalle
+              </button>
+              <button type="button" class="btn btn-warning mi-boton" data-toggle="modal">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+
+         <div class="modal fade" id="ModalPintxo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog modal-dialog-scrollable" >
+             <div class="modal-content" style="background-color: #5e1ea9">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Pintxo de bacalao</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
+               <div class="modal-body">
+                 <img src="images/pintxo de bacalao.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Pintxo">
+                 <p class="card-text detalle-descripciones">Se prepara con pescado desalado y sin cocinar. Buen bacalao de calidad y un aceite de oliva virgen extra. Un poco de guindilla, dientes de ajo y perejil.</p>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                 <button type="button" class="btn btn-warning">Agregar a Carrito</button>
+               </div>
+             </div>
+           </div>
+         </div>
+
+        <div class="rounded-lg border border-warning text-black contenedor-detalle">
+           <h5 class="card-title mi-cabecera-detalle">Merluza a la vasca</h5>
+             <img src="images/merluza vasca.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Merluza a la vasca">
+             <div class="d-flex align-content-center justify-content-around">
+               <button type="button" class="btn btn-warning mi-boton" data-toggle="modal" data-target="#ModalMerlu">
+                 Ver Detalle
+               </button>
+               <button type="button" class="btn btn-warning mi-boton" data-toggle="modal">
+                 Agregar al carrito
+               </button>
+             </div>
+           </div>
+
+          <div class="modal fade" id="ModalMerlu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" >
+              <div class="modal-content" style="background-color: #5e1ea9">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Merluza a la vasca</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/merluza vasca.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Merluza a la vasca">
+                  <p class="card-text detalle-descripciones">La merluza a la vasca o en salsa verde se reconoce por el color del perejil que lleva la salsa, un caldo sabrosísimo para mojar pan.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-warning">Agregar a Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="rounded-lg border border-warning text-black contenedor-detalle">
+             <h5 class="card-title mi-cabecera-detalle">Calamares en su tinta</h5>
+               <img src="images/calamares en su tinta.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Calamares en su tinta">
+               <div class="d-flex align-content-center justify-content-around">
+                 <button type="button" class="btn btn-warning mi-boton" data-toggle="modal" data-target="#ModalCala">
+                   Ver Detalle
+                 </button>
+                 <button type="button" class="btn btn-warning mi-boton" data-toggle="modal">
+                   Agregar al carrito
+                 </button>
+               </div>
+             </div>
+
+            <div class="modal fade" id="ModalCala" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" >
+                <div class="modal-content" style="background-color: #5e1ea9">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Calamares en su tinta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/calamares en su tinta.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Calamares en su tinta">
+                    <p class="card-text detalle-descripciones">Calamares cocinados en su propia tinta, acompañados con arroz pilaf. Muy saludable y llena de sabor.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning">Agregar a Carrito</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <div class="rounded-lg border border-warning text-black contenedor-detalle">
+           <h5 class="card-title mi-cabecera-detalle">Porrusalda</h5>
+             <img src="images/Porrusalda.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Porrusalda">
+             <div class="d-flex align-content-center justify-content-around">
+               <button type="button" class="btn btn-warning mi-boton" data-toggle="modal" data-target="#ModalPorru">
+                 Ver Detalle
+               </button>
+               <button type="button" class="btn btn-warning mi-boton" data-toggle="modal">
+                 Agregar al carrito
+               </button>
+             </div>
+           </div>
+
+          <div class="modal fade" id="ModalPorru" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" >
+              <div class="modal-content" style="background-color: #5e1ea9">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Porrusalda</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/Porrusalda.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Porrusalda">
+                  <p class="card-text detalle-descripciones">Reconfortante guiso de puerros, patatas y pescado. Opción vegetariana.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-warning">Agregar a Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="rounded-lg border border-warning text-black contenedor-detalle">
+           <h5 class="card-title mi-cabecera-detalle">Lubina a la donostiarra</h5>
+             <img src="images/Lubina a la donostiarra.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Lubina a la donostiarra">
+             <div class="d-flex align-content-center justify-content-around">
+               <button type="button" class="btn btn-warning mi-boton" data-toggle="modal" data-target="#ModalLubi">
+                 Ver Detalle
+               </button>
+               <button type="button" class="btn btn-warning mi-boton" data-toggle="modal">
+                 Agregar al carrito
+               </button>
+             </div>
+           </div>
+
+          <div class="modal fade" id="ModalLubi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" >
+              <div class="modal-content" style="background-color: #5e1ea9">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Lubina a la donostiarra</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <img src="images/Lubina a la donostiarra.jpg" class=" rounded img-fluid card-img-top img-thumbnail imagen-producto" alt="Lubina a la donostiarra">
+                  <p class="card-text detalle-descripciones">Pescado asado con un aderezo de ajo, guindilla y aceite, acompañado con puré de papas.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-warning">Agregar a Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+     </div>
     </main>
      <!--                             INICIO DE FOOTER                       -->
-    <footer class="container mx-auto st-footer col-12">
+    <footer class="container mx-auto st-footer col-12 align-bottom">
        <div class="redes d-flex justify-content-center">
            <div class="mis-redes-sociales align-self-center">
              <br>
@@ -64,8 +270,8 @@
              </div>
            </div>
        </div>
-           <hr>
-       <div class="d-flex justify-content-around">
+        <hr>
+       <!-- <div class="d-flex justify-content-around bg-secondary text-white">
            <div class="">
              <div class="">
                <h5 class="lista-de-secciones">Mapa del sitio</h5>
@@ -96,7 +302,7 @@
            </div>
          </div>
 
-       </div>
+       </div> -->
        <hr>
        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
          <p class="float-left" style="color: #000;">&copy; 2020 Trabajo Integrador. </p>
