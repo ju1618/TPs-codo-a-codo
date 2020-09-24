@@ -4,14 +4,14 @@
   padding: 0px;
 }
 body {
-  font-family:'Fira Sans', sans-serif;;
+  font-family:'Epilogue', sans-serif;;
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
   color: #fff;
   text-align: center;
   background-size: cover;
-  background-color: gray;
+  background-color: #5e1ea9;
   overflow: auto;
 }
 ul {
@@ -24,10 +24,6 @@ a{
   text-decoration: none;
 }
 
-.main-container-index{
-  background-image: url("../images/colorclaro.jpg");
-  background-size:cover;
-}
 
 header{
   margin-bottom:10px;
@@ -47,17 +43,19 @@ header{
   width: 2vw;
 }
 
-.main-content-product{
-  overflow: hidden;
-  display: inline-flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  justify-content: space-around;
-  background-color: white;
-  width: 95vw;
-  padding: 10px;
-  margin: 50px 10px 10px 30px;
+.frase{
+  margin: 10px;
 }
+
+.img-carousel{
+  max-height: 300px;
+  width: auto;
+}
+
+.menu-boton{
+  margin-top: 20px;
+}
+
 #content-product{
   background-color: rgba(191, 194, 188, 0.55);
   width: 30vw;
